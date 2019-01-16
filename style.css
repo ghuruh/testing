@@ -1,0 +1,204 @@
+body {
+  margin: 20px auto;
+  width: 1300px;
+  padding: 30px 50px;
+  border-radius: 8px;
+  background: white;
+  background-image: url('img/background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: 'Lucida Grande', 'Helvetica Neue', sans-serif;
+  font-size: 13px;
+}
+.jumbotron{
+  font-family:"Stencil";
+  background-image: url('img/background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+	
+}
+.responsive img {
+    max-width:100%;
+    /*width:100%;*/
+    height: auto;
+}
+
+p{
+  font-family: "Times New Roman",Times,red serif;
+  text-indent: 50px;
+    text-align: justify;
+    letter-spacing: 3px;
+}
+.container {
+  display:flex;
+}
+
+
+.profil{
+    background-color: white;
+    width: auto;
+    border: 25px solid black;
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity :0.8;
+    font-family: "Berlin Sans FB Demi";
+    color: black;
+
+}
+
+.login {
+  margin: 20px auto;
+  width: 300px;
+  padding: 30px 25px;
+  background: white;
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+}
+
+h1.login-title {
+  margin: -28px -25px 25px;
+  padding: 15px 25px;
+  line-height: 30px;
+  font-size: 34px;
+  color: black;
+  text-align:center;
+  background: white;
+  border-radius: 8px; 
+  
+ 
+}
+
+.login-input {
+  width: 285px;
+  height: 50px;
+  margin-bottom: 25px;
+  padding-left:10px;
+  font-size: 15px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-button {
+  width: 100%;
+  height: 50px;
+  padding: 0;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  background: #f0776c;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer; 
+  outline:0;
+}
+
+/*Jika layar berukuran 980px atau kurang*/
+@media screen and(max-width:980px){
+  #wrapper{
+    width:96%;
+  }
+  #maincontent{
+    width: 66%:;
+  }
+  #sidebar{
+    width:30%;
+  }
+}
+
+*{margin:0; padding: 0}
+  .container{width: 800px; margin: auto;}
+  fieldset{width: 400px; padding: 10px;}
+  .kotak{border: 1px solid red; padding: 5px; margin:5px 0; overflow: hidden;}
+
+
+#comment_form input, #comment_form textarea {
+    border: 2px solid rgba(0,0,0,0.1);
+    padding: 8px 10px;
+    outline: 0;
+}
+#comment_form input {
+    width: 250px;
+}
+#comment_form textarea {
+    width: 450px;
+}
+
+#comment_form input[type="submit"] {
+    cursor: pointer;
+    background: -webkit-linear-gradient(top, #efefef, #ddd);
+    background: -moz-linear-gradient(top, #efefef, #ddd);
+    background: -ms-linear-gradient(top, #efefef, #ddd);
+    background: -o-linear-gradient(top, #efefef, #ddd);
+    background: linear-gradient(top, #efefef, #ddd);
+    color: #333;
+    text-shadow: 0px 1px 1px rgba(255,255,255,1);
+    border: 1px solid #ccc;
+}
+
+#comment_form input[type="submit"]:hover {
+    background: -webkit-linear-gradient(top, #eee, #ccc);
+    background: -moz-linear-gradient(top, #eee, #ccc);
+    background: -ms-linear-gradient(top, #eee, #ccc);
+    background: -o-linear-gradient(top, #eee, #ccc);
+    background: linear-gradient(top, #eee, #ccc);
+    border: 1px solid #bbb;
+}
+
+#comment_form input[type="submit"]:active {
+    background: -webkit-linear-gradient(top, #ddd, #aaa);
+    background: -moz-linear-gradient(top, #ddd, #aaa);
+    background: -ms-linear-gradient(top, #ddd, #aaa);
+    background: -o-linear-gradient(top, #ddd, #aaa);
+    background: linear-gradient(top, #ddd, #aaa);    
+    border: 1px solid #999;
+}
+
+#comment_form div {
+    margin-bottom: 8px;
+}
+
+.context-dark{
+    color: rgba(255, 255, 255, 0.8);
+    background-image: url("img/fedora.jpg");
+}
+
+.footer-classic a{
+    color: #ffffff;
+
+}
+.logo{
+  margin: 25px 50px 50px 25px;
+}
+footer {
+display: block;
+}
+.contact-list{
+  font-family: "calibri";
+}
+h2{
+  font-family: "Cooper Black";
+  text-shadow: 2px 2px red;
+  color: white;
+  border-style: outset;
+  border-style: solid;
+    border-color: white;
+  background-color: gold;
+}
+
+h3{
+  font-family: "Cooper Black";
+  
+  color: white;
+  border-style: solid;
+    border-color: red;
+  background-color: gold;
+}
+h1{
+  text-decoration: overline;
+  text-align: center;
+}

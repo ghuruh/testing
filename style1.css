@@ -1,0 +1,25 @@
+		.container{
+			width:650px;
+			margin: auto;
+			border: 1px dotted #blue;
+			padding: 10px;
+			background: grey;
+			color:#fff;
+		}
+
+		h2{
+			text-align: center;
+			text-decoration: underline;
+
+
+		}
+
+		table{
+			background: DeepPink;
+			margin:auto;
+
+		}
+
+		td{
+			padding: 10px
+		}

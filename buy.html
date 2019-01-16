@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <title>Toko Pati</title>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet"href="css/bootstrap.min.css">
+       <script src="css/jquery.min.js"></script> <script src="css/bootstrap.min.js"></script>  
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <a class="logo" href="index.html"><img src="img/logo.jpg" style="float:left; width:270x; height:170px;"></a>
+                <h1 class="text-right">DISTRO TERBAIK DI KOTA PATI</h1>
+                <p class="text-right">Terbaik di kota ini dan selalu di hati</p>
+            </div> 
+        </div>
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">Distro Pati</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="profil.html">Profil</a></li> 
+                    <li><a href="kontak.html">Kontak</a></li>
+                    <li class="active"><a href="buy.html" >Form Pembelian</a><li> 
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                <li><a href="signin.html"><span class="glyphicon glyphicon-user"></span> Daftar</a></li>
+                    <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <h2 class="text-center">Form Pembelian</h2>
+        <div class="container">
+        <table class="table table-bordered">
+            <div class="row">
+            <tr>
+                <th>No </th>
+                <th>Gambar</th>
+                <th>Judul buku</th>
+                <th>harga</th>
+                <th>jumlah</th>
+            </tr>
+
+            <tr>
+                <th>1</th>
+                <th><img src="img/1.jpg" alt="Lights" style="width:50%"></th>
+                <th>Kaos Batik</th>
+                <th>@<input type="text" name="harga" id="algoritma" size="7" value="80000" readonly></th>
+                <th>Rp<input type="number" name="jumlah_algoritma" id="harga_algoritma" size="7" value="0" onchange="total()"></th>
+            </tr>
+
+            <tr>
+                <th>2</th>
+                <th><img src="img/2.jpg" alt="Lights" style="width:50%"></th>
+                <th>Kaos Man City</th>
+                <th>@<input type="text" name="harga" id="javascript" size="7" value="80000" readonly></th>
+                <th>Rp<input type="number" name="jumlah_javascript" id="harga_javascript" size="7" value="0" onchange="total()"></th>
+            </tr>
+
+            <tr>
+                <th>3</th>
+                <th><img src="img/3.jpg" alt="Lights" style="width:50%"></th> 
+                <th>Kaos Hijau Polos</th>
+                <th>@<input type="text" name="harga" id="php" size="7" value="75000" readonly></th>
+                <th>Rp<input type="number" name="jumlah_php" id="harga_php" size="7" value="0" onchange="total()"></th>
+            </tr>
+
+            <tr>
+                
+                <th colspan="3" style="text-align:right">jumlah Yang harus Dibayarkan</th>
+                <th>Rp<input type="text" name="total_jumlah" id="total" size="24" value="" readonly></th>
+            </tr>
+
+        </table>
+        <script type="text/javascript">
+        function total() {
+        var valgoritma = 75000 * parseInt(document.getElementById('harga_algoritma').value);
+        var vjavascript = 45000 * parseInt(document.getElementById('harga_javascript').value);
+        var vphp = 90000 * parseInt(document.getElementById('harga_php').value);
+
+        var jumlah_harga = valgoritma + vjavascript + vphp;
+
+        document.getElementById('total').value = jumlah_harga;
+        }
+        </script>
+        </div>
+        <button id="jumlah_harga">Tampilkan Nilai</button>
+        <h2>total :<span id="hasil"></span></h2>
+        <input type="button" onclick="window.print()" value="cetak">
+        <h3>Pembayaran dilakukan melalui bank Bri 9728618199 a/n Ghuruh Chandra K</h3>
+        <h3>Setelah melakukan pembayaran harap konfirmasi ke 081271988381</h3>
+         
+        
+</body>
+</html>
